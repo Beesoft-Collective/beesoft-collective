@@ -2,21 +2,9 @@ import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { TeamMember } from "@/../types";
 
-interface SocialLink {
-  href: string;
-  icon: any;
-}
-
-interface TeamMemberProps {
-  imageSrc: string;
-  name: string;
-  title: string;
-  description: string;
-  socialLinks: SocialLink[];
-}
-
-const TeamMember: React.FC<TeamMemberProps> = ({
+const TeamMember: React.FC<TeamMember> = ({
   imageSrc,
   name,
   title,

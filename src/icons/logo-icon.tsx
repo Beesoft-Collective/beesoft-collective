@@ -1,10 +1,4 @@
-import { FC } from "react";
-
-interface LogoIconProps {
-  className?: string;
-}
-
-const LogoIcon: FC<LogoIconProps> = ({ className = "" }) => {
+const LogoIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

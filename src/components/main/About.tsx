@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const About: React.FC = () => {
+const About = () => {
   return (
     <section
       className="bg-gray-50 py-12 px-4"

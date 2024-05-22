@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Disclosure, Transition } from "@headlessui/react";
+import { Transition } from "@headlessui/react";
 import { LogoIcon } from "@/icons";
 
-const Navigation: React.FC = () => {
+const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleLinkClick = () => {
@@ -21,7 +21,7 @@ const Navigation: React.FC = () => {
       <div className="container mx-auto grid grid-cols-3 items-center p-5 max-w-5xl">
         <div className="col-start-1 col-span-1">
           <Link href="/">
-            <LogoIcon className="h-8 w-8" />
+            <LogoIcon />
           </Link>
         </div>
         <div className="md:hidden col-span-2 flex justify-end">

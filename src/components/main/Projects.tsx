@@ -1,32 +1,8 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import { ProjectItems } from "@/../config";
 
-interface Project {
-  imageSrc: string;
-  name: string;
-  title: string;
-  description: string;
-  link: string;
-}
-
-const Projects: React.FC = () => {
-  const projectItems: Project[] = [
-    {
-      imageSrc: "/LogoIconTransparent.svg",
-      name: "Beesoft Components",
-      title: "Beesoft Components",
-      description: "An open source React UI library",
-      link: "https://github.com/Beehive-Software-Consultants/beesoft-components",
-    },
-    {
-      imageSrc: "/LogoIcon.svg",
-      name: "Ziehen",
-      title: "Ziehen",
-      description: "A Simple TypeScript Drag and Drop Library",
-      link: "https://github.com/Beehive-Software-Consultants/ziehen",
-    },
-  ];
-
+const Projects = () => {
   return (
     <div className="py-12 my-12 mx-auto max-w-8xl px-4" id="projects">
       <div className="mx-auto">
@@ -49,9 +25,9 @@ const Projects: React.FC = () => {
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          {projectItems.map((project) => (
+          {ProjectItems.map((project) => (
             <ProjectCard
-              key={project.name}
+              key={project.title}
               imageSrc={project.imageSrc}
               title={project.title}
               description={project.description}

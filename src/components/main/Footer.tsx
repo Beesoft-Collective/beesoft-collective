@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { LogoIconTransparent } from "@/icons";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <footer
       className="mt-2 max-h-3xl bg-primary px-4 mx-auto max-w-8xl pb-4"
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
       <div className="mx-auto pt-16 max-w-5xl px-6 grid gap-10 grid-cols-1 md:grid-cols-3 items-center">
         <div className="my-auto justify-self-center md:justify-self-start">
           <Link href="/">
-            <LogoIconTransparent className="h-10 w-10" />
+            <LogoIconTransparent />
           </Link>
         </div>
         <div className="md:flex md:col-start-2 md:col-span-1 justify-center md:space-x-8 md:justify-between mx-auto">

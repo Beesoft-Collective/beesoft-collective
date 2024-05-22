@@ -1,15 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ProjectCard } from "@/../types";
 
-interface ProjectCardProps {
-  imageSrc: string;
-  title: string;
-  description: string;
-  link: string;
-}
-
-const ProjectCard: React.FC<ProjectCardProps> = ({
+const ProjectCard: React.FC<ProjectCard> = ({
   imageSrc,
   title,
   description,
@@ -26,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       />
       <h3 className="text-primary font-black text-2xl">{title}</h3>
       <p className="text-primary text-sm m">{description}</p>
-      <div className="mt-8">
+      <div className="mt-4">
         <Link
           href={link}
           className="text-primary text-sm font-semibold border-2 rounded-md p-2 mt-12"

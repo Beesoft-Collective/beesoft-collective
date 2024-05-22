@@ -1,65 +1,8 @@
 import React from "react";
 import TeamMember from "./TeamMember";
-import {
-  faLinkedin,
-  faTwitter,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { TeamMemberItems } from "@/../config";
 
-interface TeamMemberData {
-  imageSrc: string;
-  name: string;
-  title: string;
-  description: string;
-  socialLinks: { href: string; icon: any }[];
-}
-
-const Team: React.FC = () => {
-  const teamMembers: TeamMemberData[] = [
-    {
-      imageSrc: "/brandon-trabon.jpg",
-      name: "Brandon Trabon",
-      title: "Founder, Software Engineer",
-      description: "",
-      socialLinks: [
-        {
-          href: "https://linkedin.com/in/brandontrabon/",
-          icon: faLinkedin,
-        },
-        { href: "https://x.com/brandon_trabon", icon: faTwitter },
-        { href: "https://github.com/brandontrabon", icon: faGithub },
-      ],
-    },
-    {
-      imageSrc: "/opeyemi-esan.jpg",
-      name: "Opeyemi Esan",
-      title: "Software Engineer",
-      description: "",
-      socialLinks: [
-        {
-          href: "https://linkedin.com/in/opeyemi-esan-a41512197/",
-          icon: faLinkedin,
-        },
-        { href: "https://x.com/Enop7156", icon: faTwitter },
-        { href: "https://github.com/Opeyemi-Esan", icon: faGithub },
-      ],
-    },
-    {
-      imageSrc: "/salem-olorundare.jpeg",
-      name: "Salem Olorundare",
-      title: "Software Engineer",
-      description: "",
-      socialLinks: [
-        {
-          href: "https://linkedin.com/in/salem-olorundare/",
-          icon: faLinkedin,
-        },
-        { href: "https://x.com/thectogeneral", icon: faTwitter },
-        { href: "https://github.com/thectogeneral", icon: faGithub },
-      ],
-    },
-  ];
-
+const Team = () => {
   return (
     <div className="py-12 my-12 mx-auto max-w-8xl px-4" id="team">
       <div className=" max-w-4xl mx-auto">
@@ -82,7 +25,7 @@ const Team: React.FC = () => {
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          {teamMembers.map((member) => (
+          {TeamMemberItems.map((member) => (
             <TeamMember
               key={member.name}
               imageSrc={member.imageSrc}

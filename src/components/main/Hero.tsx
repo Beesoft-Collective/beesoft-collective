@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-const Hero: React.FC = () => {
+const Hero = () => {
   return (
     <div className="pb-6 pt-4 mb-6 mt-4 px-6" id="hero">
       <div className="container mx-auto grid md:grid-cols-2 items-center max-w-6xl">
@@ -17,12 +18,14 @@ const Hero: React.FC = () => {
           <p className="text-primary text-md md:max-w-96">
             Join the Hive and help us shape the future of front-end development.
           </p>
-          <button
-            type="button"
-            className="text-white text-sm font-semibold border-2 rounded-md p-2 bg-secondary"
-          >
-            Explore our projects
-          </button>
+          <div className="mt-4">
+            <Link
+              href="/#projects"
+              className="text-white text-sm font-semibold border-2 rounded-md p-2 bg-secondary"
+            >
+              Explore our projects
+            </Link>
+          </div>
         </div>
         <div
           className="flex justify-center md:justify-end items-center"
