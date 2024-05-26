@@ -1,6 +1,6 @@
-import { ProjectCard } from "@/../types";
+import { ProjectCardType } from "@/../types";
 
-const ProjectItems: ProjectCard[] = [
+const ProjectItems: ProjectCardType[] = [
   {
     imageSrc: "/LogoIconTransparent.svg",
     title: "Beesoft Components",

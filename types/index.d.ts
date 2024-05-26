@@ -1,4 +1,4 @@
-export type TeamMember = {
+export type TeamMemberType = {
   imageSrc: string;
   name: string;
   title: string;
@@ -6,12 +6,7 @@ export type TeamMember = {
   socialLinks: { href: string; icon: any }[];
 };
 
-export type SocialLink = {
-  href: string;
-  icon: any;
-};
-
-export type ProjectCard = {
+export type ProjectCardType = {
   imageSrc: string;
   title: string;
   description: string;

@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ProjectCard } from "@/../types";
+import { ProjectCardType } from "@/../types";
 
-const ProjectCard: React.FC<ProjectCard> = ({
+const ProjectCard: React.FC<ProjectCardType> = ({
   imageSrc,
   title,
   description,
