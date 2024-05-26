@@ -1,11 +1,11 @@
-import { TeamMember } from "@/../types";
+import { TeamMemberType } from "@/../types";
 import {
   faLinkedin,
   faTwitter,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
-const TeamMemberItems: TeamMember[] = [
+const TeamMemberItems: TeamMemberType[] = [
   {
     imageSrc: "/brandon-trabon.jpg",
     name: "Brandon Trabon",

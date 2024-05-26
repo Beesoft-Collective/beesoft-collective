@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import { TeamMember } from "@/../types";
+import { TeamMemberType } from "@/../types";
 
-const TeamMember: React.FC<TeamMember> = ({
+const TeamMember: React.FC<TeamMemberType> = ({
   imageSrc,
   name,
   title,
