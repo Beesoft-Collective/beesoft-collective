@@ -6,6 +6,11 @@ export type TeamMemberType = {
   socialLinks: { href: string; icon: any }[];
 };
 
+export type SocialLink = {
+  href: string;
+  icon: any;
+};
+
 export type ProjectCardType = {
   imageSrc: string;
   title: string;
