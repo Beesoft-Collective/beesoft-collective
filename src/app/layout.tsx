@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Beehive software collective",
   description: "We build and manage open source software",
+  icons: {
+    icon: ["/favicon.ico"],
+  },
 };
 
 export default function RootLayout({
